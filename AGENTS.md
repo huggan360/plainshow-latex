@@ -36,8 +36,9 @@ Plain PHP pages and APIs plus a websocket server for live editing.
 ## The PlainShow platform
 
 PlainShow is a set of web services on one server, each in its own git repo on
-GitHub (`huggan360/plainshow-*`, private). They share one account system and
-one look.
+GitHub (`huggan360/plainshow-*`, public). They share one account system and
+one look. `plainshow-install` sets up a new server with them (any Linux, any
+domain); every address comes from `/etc/plainshow/platform.json` (kit `Platform`).
 
 | Repo | Site | What it is |
 |---|---|---|
@@ -48,6 +49,7 @@ one look.
 | latex | latex.plainshow.se | Collaborative LaTeX projects. Plain PHP + a websocket server. |
 | blog | blog.plainshow.se | Posts, albums, films. Plain PHP. Swedish UI. |
 | split | split.plainshow.se | Shared expenses. Plain PHP. Swedish UI. |
+| install | (installer) | Interactive installer for a new server: packages, apps at their newest release, certificates, first admin. |
 
 ### Versions and releases (all repos)
 
