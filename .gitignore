@@ -1,0 +1,20 @@
+/vendor/
+/node_modules/
+/temp/
+/.codex
+/.codex/
+
+*.log
+*.aux
+*.out
+*.toc
+*.pdf
+.DS_Store
+Thumbs.db
+
+# PlainShow sign-in secrets and sessions
+/config/plainshow.php
+/sessions/
+/config/database.php
+/ui/
+/config/widgets.php

@@ -1,0 +1,28 @@
+# Only the app itself is public. The repository, dependencies, server code,
+# secrets and sessions live in the same folder as the pages, so deny them.
+RedirectMatch 404 "^/(\.git|\.codex|vendor|websocket|tests|config|sessions|lib|src|node_modules|bin)(/|$)"
+RedirectMatch 404 "^/(composer\.(json|lock)|package(-lock)?\.json|[^/]*\.md|edit_old\.php|validator\.php|\.gitignore|\.htaccess)$"
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+Options -Indexes
+
+RewriteEngine On
+
+# Dashboard widgets for PlainShow core.
+RewriteRule ^api/v1/widgets/([a-z0-9-]+)$ api/widgets.php?widget=$1 [L,QSA]
+
+# The read API, reached through plainshow.se/api/latex/v1.
+RewriteRule ^api/v1(/.*)?$ api/v1.php [L,QSA]
+
+# Project files only through the access check in api/file.php.
+RewriteRule ^temp/document_([0-9]+)/(.+)$ api/file.php?document_id=$1&path=$2 [B,L,QSA]
+RewriteRule ^temp(/.*)?$ - [R=404,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+?)/?$ $1.php [NC,L]
+
+<Files ".htaccess">
+    Require all denied
+</Files>

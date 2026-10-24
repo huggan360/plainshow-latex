@@ -1,0 +1,15 @@
+{
+    "id": "latex",
+    "name": "LaTeX",
+    "description": "Write and compile LaTeX together.",
+    "icon": "bx-code-curly",
+    "version": "2.0.1",
+    "url": "{url}",
+    "health": "{url}/auth/frontchannel",
+    "update": {
+        "repository": "https://github.com/huggan360/plainshow-latex.git",
+        "shared": ["config/plainshow.php", "sessions", "temp"],
+        "steps": ["composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-req=php"],
+        "restart": ["latex-websocket"]
+    }
+}

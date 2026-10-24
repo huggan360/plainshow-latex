@@ -1,0 +1,33 @@
+{
+    "name": "hugohansson/latex",
+    "require": {
+        "cboden/ratchet": "^0.4.4",
+        "plainshow/kit": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hugohansson\\Latex\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/huggan360/plainshow-kit.git",
+            "no-api": true
+        }
+    ],
+    "config": {
+        "preferred-install": {
+            "plainshow/*": "source",
+            "*": "dist"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php lib/publish-ui.php"
+        ],
+        "post-update-cmd": [
+            "@php lib/publish-ui.php"
+        ]
+    }
+}
