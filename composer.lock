@@ -234,16 +234,16 @@
         },
         {
             "name": "plainshow/kit",
-            "version": "v1.13.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/huggan360/plainshow-kit.git",
-                "reference": "009bb5108414569562a2a4feabbaa0fd97129f2c"
+                "reference": "cdee5d1bc0457b4e16d80049ab1d1a419f7762ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/huggan360/plainshow-kit/zipball/009bb5108414569562a2a4feabbaa0fd97129f2c",
-                "reference": "009bb5108414569562a2a4feabbaa0fd97129f2c",
+                "url": "https://api.github.com/repos/huggan360/plainshow-kit/zipball/cdee5d1bc0457b4e16d80049ab1d1a419f7762ca",
+                "reference": "cdee5d1bc0457b4e16d80049ab1d1a419f7762ca",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                 "proprietary"
             ],
             "description": "PlainShow shared kit: single sign-on client, token checks, permissions and the UI assets used by every PlainShow app.",
-            "time": "2026-10-25T11:19:58+00:00"
+            "time": "2026-10-25T11:29:07+00:00"
         },
         {
             "name": "psr/http-factory",

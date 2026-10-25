@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.6.1
+
+- The backdrop's light is as gentle in every theme colour as in orange (kit 1.13.1).
+
 ## v2.6.0
 
 - LaTeX follows the theme colour chosen in the dashboard (kit 1.13), with Bree Serif titles and dark grey text in the light theme.
