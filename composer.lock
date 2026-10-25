@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d60b3802fbad7d6eb890b1ce721bcf91",
+    "content-hash": "99b67963944840f6c41c93ff32d5ab9f",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -234,16 +234,16 @@
         },
         {
             "name": "plainshow/kit",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/huggan360/plainshow-kit.git",
-                "reference": "2661e1a813d1497f4175832ad1543896a84f07ca"
+                "reference": "009bb5108414569562a2a4feabbaa0fd97129f2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/huggan360/plainshow-kit/zipball/2661e1a813d1497f4175832ad1543896a84f07ca",
-                "reference": "2661e1a813d1497f4175832ad1543896a84f07ca",
+                "url": "https://api.github.com/repos/huggan360/plainshow-kit/zipball/009bb5108414569562a2a4feabbaa0fd97129f2c",
+                "reference": "009bb5108414569562a2a4feabbaa0fd97129f2c",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                 "proprietary"
             ],
             "description": "PlainShow shared kit: single sign-on client, token checks, permissions and the UI assets used by every PlainShow app.",
-            "time": "2026-10-24T13:51:38+00:00"
+            "time": "2026-10-25T11:19:58+00:00"
         },
         {
             "name": "psr/http-factory",

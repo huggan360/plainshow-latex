@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.6.0
+
+- LaTeX follows the theme colour chosen in the dashboard (kit 1.13), with Bree Serif titles and dark grey text in the light theme.
+
 ## v2.5.1
 
 - Migrations also run where LaTeX's database user may not create tables (the first PlainShow's shared database).

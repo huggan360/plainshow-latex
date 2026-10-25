@@ -2,7 +2,7 @@
     "name": "hugohansson/latex",
     "require": {
         "cboden/ratchet": "^0.4.4",
-        "plainshow/kit": "^1.7"
+        "plainshow/kit": "^1.13"
     },
     "autoload": {
         "psr-4": {

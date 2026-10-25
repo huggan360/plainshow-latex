@@ -154,7 +154,7 @@ function latex_page_start(string $title, string $page, string $head = ''): void
 {
     ?>
 <!doctype html>
-<html lang="<?= e(\PlainShow\Kit\Lang::current()) ?>" data-theme="dark">
+<html lang="<?= e(\PlainShow\Kit\Lang::current()) ?>" data-theme="dark"<?= \PlainShow\Kit\Theme::attributes() ?>>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
